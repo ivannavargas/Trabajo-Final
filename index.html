@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitios de Interes</title>
+    <!--Barra de estado-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Mi barrio</title>
+    <!--fin de la barra de estado-->
+
+    <!-- Para cargar el mapa-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="mapa.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- terminar de cargar mapa-->
+
+</head>
+<style>
+  body{background-color: cornflowerblue;}
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand">TIMIZA</a>
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="vida.html">Disfruta Timiza</a></li>
+                <li class="nav-item"><a class="nav-link" href="sitios.html">Sitios en Timiza</a></li>
+            </ul>
+        </nav>
+   </header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!--mapa-->
+    <div class="container ">
+        <div class="col 4" class="container p-2 border text-black">
+    <div id="divMapa" ></div>
+    <script>
+     cargarMapa();
+    </script>
+    <!--mapa-->
+    </div>
+
+    <div class="container ">
+      <div class="col 4" class="container p-2 border text-black">
+        <h1>TIMIZA</h1>
+        <ul style="text-align: justify;">
+          <li>Es un barrio Ubicado en la localidad de kennedy Bogotá,en el corazon de timiza encontramos el parque, donde habitan patos y peces que ocasionalmente se pueden ver, las personas que habitan en timiza son amables y calidas, en resumidas palabras es un barrio ideal para vivir tranquilo y en comunidad</li>
+   
+         
+      </ul>
+      </div>
+     </div>
+     
+     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+    Historia de Timiza
+    </button>
+    <div class="collapse " id="collapseExample4">
+        
+                <p>
+                    En Bogotá desde los años veinte, gracias al aumento demográfico, la necesidad de nuevos planes de vivienda se hizo más que evidente; fue necesario proponer nuevas áreas residenciales en donde se buscara la articulación del tejido urbano y una definición unitaria de la ciudad a través del control de su desarrollo. En las décadas de los sesenta y setenta destacaron los proyectos del ICT donde se propusieron grandes proyectos de vivienda masiva y también proyectos de autoconstrucción progresiva. Uno de los proyectos más grandes y ambiciosos para ese entonces fue el conjunto Timiza.
+
+                    El proyecto Timiza fue iniciado 1966 y tuvo como principales arquitectos a Rogelio Salmona y Hernan Vieco. Junto a estos personajes también colaboraron otros colegas del ICT como Emecé de Murcia, Roberto Gomez, Pedro A. Mejía y Eduardo Londoño. Se trata de un conjunto de viviendas unifamiliares y edificios multifamiliares que ocupa una vasta área del sur occidente de Bogotá . El proyecto fue gestionado por el Instituto de Crédito Territorial en diferentes etapas y fue la respuesta a la necesidad de vivienda de una ciuda que para ese entonces superaba el millón de habitantes. Su planteamiento urbanistico fue un recordatorio de las propuestas Europeas durante las decadas posteriores a la segunda guerra mundial las cuales fueron adaptadas a un contexto local. Los planos urbanos y el diseño de vivienda recuerdana las casas en hilera de Alvar Aalto y a los proyectos de Jacobsen en los paises escandinavos en los que los juegos de composición permiten la construcción de conjuntos que se complementan con zonas verdes, sistemas de caminos peatonales y un contexto de manzanas no sucesivas.
+                    
+                    El proyecto consta de un conjunto con vías peatonales y vehiculares orgánicamente trazadas que proporcionaba cerca de 200 zonas de encuentro, descanso y recreación, además de generar un paisaje urbano que potenciara las calidades espaciales entre las cuales están el espacio público y el comunal. Gracias al abandono del trazado ortogonal se logró restringir el uso vehicular a las vías perimetrales liberando el interior de las manzanas con el uso del tránsito peatonal en vías angostas que generan espacios un poco más privados. Posteriormente fue agregado el parque Timiza, que consta de una serie de equipamientos deportivos tales como canchas de futbol y una pista para correr, además de un gran lago adyacente al parque.
+                    
+                    Con respecto a la zona residencial del proyecto, cabe aclarar que cuenta con una serie de aspectos poco convencionales en cuanto a proyectos de vivienda en serie se refiere: en primer lugar resalta una geometría irregular basada en diagonales. En segundo lugar la alternación de bloques multifamiliares y bloques de vivienda unifamiliares combina las dos formas de vivienda de manera paralela sobre los mismos perfiles. De la misma manera el uso del ladrillo, la ventanería, la modulación en fachada y la cubierta con fuertes sesgos son características que hasta entonces habían estado reservadas a viviendas de clase alta.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
